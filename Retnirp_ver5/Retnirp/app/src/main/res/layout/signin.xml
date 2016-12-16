@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/signinpage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/signin_logo"
+            android:id="@+id/image_signin_logo"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text_userid"
+            android:id="@+id/image_text_userid"
+            android:layout_below="@+id/image_signin_logo"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/image_button_signin"
+            android:maxHeight="50dp"
+            android:maxWidth="100dp"
+            ></ImageView>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_userid"
+            android:textSize="12dp"
+            android:maxWidth="250dp"
+            android:layout_below="@+id/image_text_userid"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/image_button_signin"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/text_password"
+            android:id="@+id/image_text_password"
+            android:layout_below="@+id/edittext_userid"
+            android:layout_marginTop="30dp"
+            android:layout_alignLeft="@+id/image_button_signin"
+            ></ImageView>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_password"
+            android:textSize="12dp"
+            android:maxWidth="250dp"
+            android:layout_below="@+id/image_text_password"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/image_button_signin"
+            android:password="true"
+            />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/button_signin"
+            android:id="@+id/image_button_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edittext_password"
+            android:layout_marginTop="35dp"
+            android:onClick="mainOnClick"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/button_nonmember"
+            android:id="@+id/image_button_customer"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_button_signin"
+            android:layout_marginTop="5dp"
+            android:onClick="mainOnClick"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="12dp"
+            android:src="@drawable/text_nonmember"
+            android:id="@+id/image_text_nonmember"
+            android:layout_below="@+id/image_button_customer"
+            android:layout_marginTop="25dp"
+            android:layout_alignLeft="@+id/image_button_signin"
+            android:layout_marginLeft="35dp"
+            android:maxHeight="10dp"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:src="@drawable/text_signup"
+            android:id="@+id/image_text_signup"
+            android:layout_below="@+id/image_button_customer"
+            android:layout_marginTop="25dp"
+            android:layout_alignRight="@+id/image_button_signin"
+            android:layout_marginRight="35dp"
+            android:maxHeight="10dp"
+            android:onClick="signupOnClick"
+            ></ImageView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

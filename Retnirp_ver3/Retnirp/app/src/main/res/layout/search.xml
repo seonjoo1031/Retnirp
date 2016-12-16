@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/searchpage"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:src="@drawable/text_search"
+            android:id="@+id/image_text_search"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/button_close"
+            android:id="@+id/image_button_close"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="close"
+            />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/button_album"
+            android:id="@+id/image_button_album"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/image_text_search"
+            android:onClick="useGallery"
+            />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/button_takepic"
+            android:id="@+id/image_button_takepic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/image_button_album"
+            android:onClick="useCamera"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchpage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/photo_ingredient"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:src="@drawable/button_retry"
+            android:id="@+id/image_button_again"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:onClick="doAgain"
+            />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:src="@drawable/button_select"
+            android:id="@+id/image_button_gosearch"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:onClick="send"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

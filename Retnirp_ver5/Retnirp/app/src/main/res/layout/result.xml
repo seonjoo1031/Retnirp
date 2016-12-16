@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:src="@drawable/text_search"
+            android:id="@+id/image_text_search"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/button_menu"
+            android:id="@+id/image_button_menu"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="mOnclickResult"
+            />
+
+    </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            android:layout_below="@id/title"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/finding">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/signin_logo"
+                        android:id="@+id/image_signin_logo"
+                        android:maxWidth="120dp"
+                        android:maxHeight="120dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_signin_logo"
+                        android:id="@+id/finding_text"
+                        android:textSize="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/greybar"
+                        android:id="@+id/image_greaybar_reg"
+                        android:layout_below="@id/finding_text"
+                        />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/text_registeredingredient"
+                        android:id="@+id/image_text_registered"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/finding_text"
+                        />
+
+                    <ListView
+                        android:id="@+id/list_harmful"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_text_registered"
+                        android:transcriptMode="disabled"
+                        android:divider="#ffffff"
+                        android:layout_marginTop="10dp">
+
+                    </ListView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_new_ingredient"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/greybar"
+                        android:id="@+id/image_greaybar_new"
+                        />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/text_newingredient"
+                        android:id="@+id/image_text_new"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+
+                    <ListView
+                        android:id="@+id/list_allergic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_text_new"
+                        android:transcriptMode="disabled"
+                        android:divider="#ffffff"
+                        android:layout_marginTop="10dp">
+
+                    </ListView>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>

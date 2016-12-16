@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4fd2c2"
+    >
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/button_close_white"
+        android:id="@+id/image_button_close"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="mOnClick_menu"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_member"
+        android:id="@+id/image_profile"
+        android:layout_below="@+id/image_button_close"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_profile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userid"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:src="@drawable/line"
+        android:id="@+id/line1"
+        android:layout_below="@+id/image_menu_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:src="@drawable/text_search_white"
+        android:id="@+id/image_menu_search"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/userid"
+        android:layout_centerHorizontal="true"
+        android:onClick="mOnClick_menu"/>
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:src="@drawable/text_registerallergic_white"
+        android:id="@+id/image_menu_register"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:onClick="mOnClick_menu"
+        />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:src="@drawable/line"
+        android:id="@+id/line2"
+        android:layout_below="@+id/image_menu_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:src="@drawable/text_signout_white"
+        android:id="@+id/image_menu_signout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/line2"
+        android:layout_centerHorizontal="true"
+        android:onClick="mOnClick_menu"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:src="@drawable/text_delete_white"
+        android:id="@+id/image_menu_delete"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/line3"
+        android:layout_centerHorizontal="true"
+        android:onClick="mOnClick_menu"
+        />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:src="@drawable/line"
+        android:id="@+id/line3"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/image_menu_signout"
+        android:layout_alignStart="@+id/line2" />
+
+
+</RelativeLayout>

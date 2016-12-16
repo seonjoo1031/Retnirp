@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:src="@drawable/text_registeringallergic"
+        android:id="@+id/image_text_putingredient"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/button_close"
+        android:id="@+id/image_button_close"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="mOnclick"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/edit_allergic"
+        android:layout_below="@id/image_text_putingredient"
+        android:layout_marginTop="80dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/button_allergicregister"
+        android:id="@+id/image_register_confirm"
+        android:layout_below="@id/edit_allergic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="mOnclick"
+        />
+</RelativeLayout>

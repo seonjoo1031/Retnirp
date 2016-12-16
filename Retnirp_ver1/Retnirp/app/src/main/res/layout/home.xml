@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/homepage_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/button_menu"
+            android:id="@+id/image_button_menu_home"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="mOnClick"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:src="@drawable/text_home"
+            android:id="@+id/image_text_home_title"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/greybar"
+            android:id="@+id/image_greaybar_reg"
+            android:layout_below="@+id/image_text_home_title"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text_recenthistory"
+            android:id="@+id/image_text_recenthistory"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homepage_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp">
+
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_register"
+            android:id="@+id/image_button_register"
+            android:layout_alignParentLeft="true"
+            android:onClick="mOnClick"/>
+
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_search"
+            android:id="@+id/image_button_search"
+            android:layout_alignParentRight="true"
+            android:onClick="mOnClick"/>
+    </RelativeLayout>
+
+</RelativeLayout>

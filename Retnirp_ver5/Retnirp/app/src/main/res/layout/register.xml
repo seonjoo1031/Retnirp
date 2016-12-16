@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/button_menu"
+            android:id="@+id/image_button_menu_reg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="mOnclick"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:src="@drawable/text_registerallergic"
+            android:id="@+id/image_text_reg_title"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/greybar"
+            android:id="@+id/image_greaybar_reg"
+            android:layout_below="@+id/image_text_reg_title"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text_registeredingredient2"
+            android:id="@+id/image_text_registered"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:id="@+id/ingredients"
+        android:layout_marginTop="-20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ListView
+                    android:id="@+id/list_allergic_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:transcriptMode="disabled"
+                    android:divider="#ffffff"
+                    >
+
+                </ListView>
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="300dp"
+                   android:gravity="center"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/button_plus"
+            android:id="@+id/image_button_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="mOnclick"
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
