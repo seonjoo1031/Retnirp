@@ -26,6 +26,9 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Chaeyoung on 2016-11-23.
+   
+   Modified by Seonjoo
+   : communicating with server to retrieve search history data
  */
 
 public class HomeActivity extends Activity {
