@@ -15,6 +15,9 @@ import java.util.ArrayList;
 
 /**
  * Created by Chaeyoung on 2016-12-07.
+   
+   Modified by Seonjoo
+   : using aquery library, displaying history image in adapter
  */
 
 public class HistoryAdapter extends BaseAdapter {
